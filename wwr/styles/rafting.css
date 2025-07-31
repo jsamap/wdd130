@@ -54,7 +54,7 @@ header nav {
 nav a {
     color: white;
     display: block;
-    padding: 1rem;
+    padding: 1.5rem;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
@@ -78,6 +78,7 @@ footer {
     grid: 100% / 20% 60% 20%;
     justify-content: space-around;
     align-items: center;
+    border-top: 1px solid #ccc;
 }
 footer nav {
     display: flex;
@@ -86,13 +87,75 @@ footer nav {
     grid-template-columns: auto auto auto;
     margin-right: 3rem;
 }
-footer p {
+footer p, a {
     align-self: center;
     place-self: center;
     justify-self: center;
+    text-decoration: none;
 }
 h6 {
     color: black;
+}
+iframe {
+    width: 440px;
+    height: 500px;
+}
+form {
+    width: 500px;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 /0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+fieldset {
+    display: grid;
+/*    grid-gap: 0.5rem; */
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+legend {
+    padding: 0.5rem;
+    color: var(--secondary-color);
+    font-size: 1.3em;
+}
+#contact-info label {
+    text-align: right;
+    padding-right: 1rem;
+}
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+input[type="radio"], input[type="checkbox"] {
+    color: #136c62;
+    margin-left: auto;
+    margin-right: 0.5rem;
+}
+button {
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1rem;
+}
+button:hover {
+    background-color: var(--accent1-color);
+}
+table {
+    margin: 0.8rem 0 0.8rem 0;
+}
+td {
+    padding: 0.2rem;
 }
 
 /* Classes */
@@ -142,4 +205,35 @@ h6 {
 }
 .adventure img {
     width: 200px;
+}
+.infoform {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.company-info {
+    width: 500px;
+    padding: 1.2rem;
+    border: 1px solid rgb(0 0 0 /0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.form-item {
+    display: grid;
+    align-items: center;
+}
+.col-1 {
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: .5rem;
+}
+.col-2 {
+    grid-template-columns: 1fr 9fr;
+    font-size: 0.9rem;
+}
+.radio-together {
+    display: flex;
 }

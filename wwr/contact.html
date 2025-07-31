@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | WWR</title>
+    <meta name="description" content="Contact Us page.">
+    <meta name="author" content="Jared Samayoa">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&family=Rubik+Dirt&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/wwr-logo.webp" alt="Rafting Company Logo">
+        <nav>
+            <a href="index.html">Index</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section class="infoform">
+            <div class="company-info">
+                <h2>Company Information</h2>
+                <table>
+                    <tr>
+                        <td>
+                            Company Name:                      
+                        </td>
+                        <td>
+                            White Water Rafting
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Phone Number:
+                        </td>
+                        <td>
+                            +1 (123) 456-7890
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email Address:
+                        </td>
+                        <td>
+                            email.address@domain.ext
+                        </td>
+                    </tr>
+                </table>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10501.364371279835!2d-90.38684671253552!3d15.59747971477809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858a5b52dc21bf01%3A0xbbcc5c5e5577bfc0!2zUsOtbyBTYWNoaWNow6EgVmlsbGEgRWNvbMOzZ2ljYQ!5e1!3m2!1ses-419!2sgt!4v1753960291320!5m2!1ses-419!2sgt"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <form>    
+                    <h2>Contact Us</h2>
+                    <fieldset id="contact-info" class="form-item">
+                        <legend>Contact Information</legend>
+                        <label>Full Name: <input type="text" name="fullname"></label><br>
+                        <label>Email Address: <input type="email" name="emailaddress"></label>
+                    </fieldset>
+                    <fieldset id="questions" class="form-item">
+                        <legend>Questions</legend>
+                        <div class="radio-together">
+                            <div class="form-item col-1">
+                                <input type="radio" id="genaral_inquiry" name="message_type" value="General inquiry">
+                                <label for="genaral_inquiry">General inquiry</label>
+                            </div>
+                            <div class="form-item col-1">
+                                <input type="radio" id="reservation_question" name="message_type" value="Reservation question">
+                                <label for="reservation_question">Reservation question</label>
+                            </div>
+                            <div class="form-item col-1">
+                                <input type="radio" id="website_suggestion" name="message_type" value="Website suggestion">
+                                <label for="website_suggestion">Website suggestion</label>
+                            </div>
+                        </div>
+                        <br>
+                        <label>Message: </label>
+                        <textarea name="message" rows="4" placeholder="Write your message here..."></textarea>
+                        <br>
+                        <div class="form-item col-2">
+                            <input type="checkbox" name="suscribe">
+                            <label>Please subscribe me to the monthly newsletter.</label>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section>
+            <h2>The best coaches are waiting for you!</h2>
+            <div class="adventure">
+                <figure>
+                    <img src="images/happy-1.webp" alt="Rafting 1">
+                    <figcaption>Guiding</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/happy-2.webp" alt="Rafting 2">
+                    <figcaption>Protecting</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/happy-3.webp" alt="Rafting 3">
+                    <figcaption>Inspiring</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/happy-4.webp" alt="Rafting 4">
+                    <figcaption>Teaching</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://1drv.ms/i/c/22c76e5ea17a6973/EYxe9KcyAfVKn3T6CbNzwDABnljqQAYBH028XVG9llNqcQ?e=CiFu2C">Wireframe ← 🗎</a>
+        <p>&copy;2025 - White Water Rafting - Jared Samayoa</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://x.com/">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.svg" alt="instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
