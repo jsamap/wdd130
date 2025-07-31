@@ -8,21 +8,31 @@
 }
 nav {
     background-color: var(--color-darkblue);
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 h1 {
     color: var(--color-darkblue);
+    border-bottom: 2px solid black;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
 }
 main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
+    margin: 1rem 0.5rem 0.5rem 1rem;
     box-shadow: 0 0 30px gray;
     float: right;
 }
@@ -31,26 +41,29 @@ p {
 }
 main {
     max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 aside {
-    width: 20em;
+    width: 20rem;
     text-align: center;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 aside img {
     width: 200px;
     height: auto;
 }
-/*aside h2 {
-    position: relative;
-    top: 110px;
-    left: 0;
-}*/
 footer {
     margin-top: 20px;
     border-top: 1px solid #000;
     text-align: center;
 }
-
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
 /* Class Selectors */
 .box {
     margin: 1rem;
@@ -59,20 +72,7 @@ footer {
     background-color: lightskyblue;
     color: white;
 }
-
-
-/* TEMP COMMENT
-
-primary-color: #91A03A (green moss)
-secondary-color: #5B3D1E (kobicha - brown)
-accent1-color: #1DA595 (persian green - aqua)
-accent2-color: #D07B24 (ochre - brown)
-
-extra-color: #F7CA39
-URL: https://coolors.co/91a03a-1da595-f7ca39-5b3d1e-d07b24
-
-
-heading-font: Rubik Dirt
-text-font: Mali
-
-*/
+.grid {
+    display: grid;
+    align-items: center;
+}
