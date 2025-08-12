@@ -237,3 +237,14 @@ td {
 .radio-together {
     display: flex;
 }
+.hidden {
+    position: absolute;
+    top: 0;
+    width: 0;
+    padding: 0;
+    text-align: center;
+    opacity: 0;
+    font-family: var(--heading-font);
+    background-color: var(--accent1-color);
+    color: white;
+}
