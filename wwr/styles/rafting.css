@@ -35,7 +35,7 @@ h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.85;
+    opacity: 0.9;
     font-family: var(--heading-font);
     background-color: var(--accent1-color);
     color: white;
@@ -153,6 +153,7 @@ button:hover {
 }
 table {
     margin: 0.8rem 0 0.8rem 0;
+    background-color: rgb(0 0 0 /0);
 }
 td {
     padding: 0.2rem;
@@ -206,6 +207,18 @@ td {
 .adventure img {
     width: 200px;
 }
+.trips {
+    display: flex;
+    flex-direction: row;
+	justify-content: space-around;
+    margin-top: 1rem;
+}
+.trips img {
+    width: 100%;
+}
+.dates {
+    color: gray;
+}
 .infoform {
     display: flex;
     align-items: center;
@@ -237,6 +250,73 @@ td {
 .radio-together {
     display: flex;
 }
+.trips_action{
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+	justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+.trips_calendar_container{
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+    align-items: center;
+}
+.trips_calendar{
+    width: 100%;
+    font-size: 22px;
+}
+.trips_calendar_right h2{
+    margin: 1.5rem 0;
+}
+.trips_table {
+    margin-left: 5%;
+    width: 90%;
+}
+.trips_table th, .trips_table td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 5px 20px;
+}
+.trips_table th, .trips_table td {
+  background-color: white;
+}
+.button_a{
+    color: white;
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    white-space: nowrap;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(0 0 0 /0.1);
+    background-color: var(--secondary-color);
+    width: 50%;
+    text-align: center;
+}
+.hero div {
+    color: white;
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 /0.1);
+    border-radius: 0.5rem;
+    background-color: black;
+    display: grid;
+}
+.trips figure {
+    width: 30%;
+    vertical-align: top;
+}
+.trips p {
+    margin-top: 0;
+}
 .hidden {
     position: absolute;
     top: 0;
@@ -247,4 +327,63 @@ td {
     font-family: var(--heading-font);
     background-color: var(--accent1-color);
     color: white;
+}
+/* ID Selectors */
+#article_hero {
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    width: 30%;
+    height: 70%;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.85);
+    color: white;
+    vertical-align: middle;
+}
+#article_hero h2 {
+    margin: 16px 0 0 0;
+    color: white;
+}
+#article_trips {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 20%;
+    height: 40%;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.85);
+    color: white;
+    vertical-align: middle;
+}
+#article_hero form{
+    color: white;
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 /0.1);
+    border-radius: 0.5rem;
+    background-color: black;
+    display: grid;
+}
+#article_hero p {
+    margin: 0;
+    padding: 8px;
+}
+#button_trips_contact {
+    color: white;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    white-space: nowrap;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(0 0 0 /0.1);
+    background-color: var(--accent2-color);
+    width: 80%;
+    text-align: center;
 }
