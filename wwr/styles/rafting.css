@@ -3,8 +3,8 @@
     --secondary-color: #5B3D1E;
     --accent1-color: #136c62;
     --accent2-color: #D07B24;
-    --heading-font: "Rubik Dirt", system-ui;
-    --body-font: "Mali", cursive;
+    --heading-font: "Merriweather", serif;
+    --body-font: "Roboto", sans-serif;
 }
 * {
     margin: 0;
