@@ -326,7 +326,7 @@ td {
     opacity: 0;
     font-family: var(--heading-font);
     background-color: var(--accent1-color);
-    color: white;
+    color: black;
 }
 /* ID Selectors */
 #article_hero {
